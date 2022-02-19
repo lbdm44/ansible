@@ -1,0 +1,92 @@
+- name: Git personal core.editor
+  git_config:
+    name: core.editor
+    scope: global
+    value: "code --wait"
+  tags:
+  - git-personal
+- name: Git personal credential
+  git_config:
+    name: core.credential.helper
+    scope: global
+    value: osxkeychain
+  tags:
+  - git-personal
+- name: Git personal color
+  git_config:
+    name: color.ui
+    scope: global
+    value: auto
+  tags:
+  - git-personal
+- name: Git personal color.status.added
+  git_config:
+    name: color.status.added
+    scope: global
+    value: green
+  tags:
+  - git-personal
+- name: Git personal color.status.changed
+  git_config:
+    name: color.status.changed
+    scope: global
+    value: yellow
+  tags:
+  - git-personal
+- name: Git personal color.status.untracked
+  git_config:
+    name: color.status.untracked
+    scope: global
+    value: cyan
+  tags:
+  - git-personal
+- name: Git personal alias branch
+  git_config:
+    name: alias.br
+    scope: global
+    value: branch
+  tags:
+  - git-personal
+- name: Git personal alias checkout
+  git_config:
+    name: alias.co
+    scope: global
+    value: checkout
+  tags:
+  - git-personal
+- name: Git personal alias log
+  git_config:
+    name: alias.lg
+    scope: global
+    value: "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
+  tags:
+  - git-personal
+- name: Git personal alias log with branches
+  git_config:
+    name: alias.lgb
+    scope: global
+    value: "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit --branches"
+  tags:
+  - git-personal
+- name: Git personal alias log min
+  git_config:
+    name: alias.ll
+    scope: global
+    value: "log --pretty=format:'%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate --numstat"
+  tags:
+  - git-personal
+- name: Git personal alias status
+  git_config:
+    name: alias.st
+    scope: global
+    value: "status -sb"
+  tags:
+  - git-personal
+- name: Git personal alias unstage
+  git_config:
+    name: alias.unstage
+    scope: global
+    value: "reset --"
+  tags:
+  - git-personal
+
