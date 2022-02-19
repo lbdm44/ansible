@@ -1,0 +1,15 @@
+- name: Install Volta
+  shell: curl https://get.volta.sh | bash
+  tags:
+    - install
+    - node-setup
+- name: Install Node LTS
+  shell: ~/.volta/bin/volta install node@lts
+  tags:
+    - install
+    - node-setup
+- name: Install Yarn
+  shell: ~/.volta/bin/volta install yarn
+  tags:
+    - install
+    - node-setup
