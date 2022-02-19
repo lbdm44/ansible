@@ -3,10 +3,10 @@
   shell: brew install fish
   tags:
     - install
-    - core-setup
+    - shell
 - name: Install Starship
   become: true
   homebrew: name=starship state=present
   tags:
     - install
-    - core-setup
+    - shell
