@@ -1,3 +1,5 @@
+- name: Cleanup .gitconfig
+  shell: rm ~/.gitconfig
 - name: Git personal core.editor
   git_config:
     name: core.editor
@@ -7,7 +9,7 @@
   - git-personal
 - name: Git personal credential
   git_config:
-    name: core.credential.helper
+    name: credential.helper
     scope: global
     value: osxkeychain
   tags:
