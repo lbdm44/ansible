@@ -2,7 +2,7 @@
 
 echo "
 #####################################
-Installing Homebrew
+	Installing Homebrew
 #####################################
 "
 
@@ -12,7 +12,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 echo "
 #####################################
-Installing Ansible
+	Installing Ansible
 #####################################
 "
 
